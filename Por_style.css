@@ -1,0 +1,837 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* *****************Home Section***************** */  
+/* Logo */
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 200px;
+    z-index: 21;
+}
+.logo img{
+    width: 73px;
+}
+
+/* Navbar  */
+nav{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+nav::before{
+    content: "";
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+    z-index: 10;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    position: fixed;
+    right: 00px;
+    padding: 36px 120px;
+    z-index: 20;
+}
+nav ul li{
+    padding: 00px 12px;
+}
+nav li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+nav li a span{
+    display: block;
+    padding: 00px 12px;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.2s ease-in-out 0s;
+}
+nav li a span:hover{
+    transform: translateY(12px); 
+}
+
+/* Responsive Navbar */
+#Home .responsive_nav{
+    display: none;
+}
+
+/* Myself */
+.Myself{
+    display: inline-block;
+    color: white;
+    position: relative;
+    top: 20rem;
+    left: 235px;
+    z-index: 1;
+}
+.Myself h2{
+    display: flex;
+    flex-direction: row;
+    font-size: 3.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.Myself h2 span{
+    padding-right: 1rem;
+    animation: tracking-in-expand 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+} 
+.Myself h4{
+    margin: 00px 00px;
+}
+.Myself h4 span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    animation: tracking-in-expand 4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes tracking-in-expand{
+    0%{
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40%{
+      opacity: 0.6;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+/* Background Img */
+.backg_img{
+    position: relative;
+    top: -35px;
+}
+.backg_img img{
+    max-width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* About Side Symboll */
+.aboutSideSym{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 1rem;
+    float: right;
+    transform: rotate(-90deg);
+    position: relative;
+    top: -310px;
+    right: 20px;
+}
+.aboutSideSym a{
+    color: grey;
+    text-decoration: none;
+}
+
+/* Waves Section */
+.waves{
+    width: 100%;
+    position: relative;
+    top: -140px;
+    overflow: hidden;
+}
+
+/* *****************About Section***************** */
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 00px;
+    width: 100%;
+    position: relative;
+    /* top: 100px; */
+}
+/* My Img */
+.about .My_img{
+    position: relative;
+    right: 10px;
+}
+.about .My_img::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -35px;
+    border: 2px solid #f3f2f2;
+    width: 100%;
+    height: 100%;
+    border-radius: 00px 00px 30px 00px;
+}  
+.about .My_img img{
+    position: relative;
+    width: 350px;
+    height: 470px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 2px white;
+}
+/* My Detail */
+.about .detail{
+    width: 800px;
+    padding-left: 70px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.about .detail h2{
+    display: inline-block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+}
+.about .lineOne .linefirst{
+    display: inline-block;
+    margin-top: 00px;
+    height: 2px;
+    width: 255px;
+    background-color: black;
+}
+.about .lineOne hr{
+    width: 60px;
+    height: 07px;
+    background-color: black;
+    position: relative;
+    bottom: 38px;
+}
+.about .detail p{
+    width: 730px;
+    margin: 27px 00px;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
+/* Share(Social link) */
+.about .share{
+    display: inline-flex;
+    color: black;
+    z-index: 100;
+}
+.about .share h3{
+    width: 80px;
+}
+.about .share a{
+    display: inline-block;
+    color: #333333;
+    margin: 07px 10px;
+}
+
+/* *****************Portfolio Section***************** */
+.por_waves{
+    width: 100%;
+    position: relative;
+    top: 07px;
+}
+.Portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    color: black;
+    background-color: #f9f9f9;
+    z-index: -1;
+}
+.Portfolio h2{
+    display: inline;
+    font-weight: 600;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.Portfolio .lineTwo{
+    position: relative;
+    top: 13px;
+}
+.Portfolio .lineTwo .lineSecond{
+    margin-top: 00px;
+    height: 2px;
+    width: 255px;
+    background-color: black;
+}
+.Portfolio .lineTwo hr{
+    display: inline-block;
+    width: 60px;
+    height: 07px;
+    background-color: black;
+    position: relative;
+    bottom: 25.5px;
+}
+.Portfolio .manage{
+    width: 20%;
+}
+.Portfolio .manage ul{
+    display: flex;
+    flex-direction: row;
+}
+.Portfolio .manage ul li{
+    list-style: none;
+    padding-right: 29px;
+    font-size: 20px;
+}
+.Portfolio .manage ul li button{
+    display: inline-block;
+    position: relative;
+    border: solid 2px transparent;
+    background-color: transparent;
+}
+.Portfolio .manage ul li button::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+.Portfolio .manage ul li button:hover::before{
+    scale: 1;
+}
+.Portfolio .por_box{
+    display: grid;
+    grid-template-rows: repeat(2,300px);
+    grid-template-columns: repeat(3,433px);
+    grid-gap: 1rem;
+    margin-top: 30px;
+}
+.Portfolio .por_box .box{
+    display: flex;
+    flex-direction: column;
+}
+.Portfolio .por_box a img{
+    width: 434px;
+    height: 300px;
+    transform: 0.3s;
+}
+.Portfolio .por_box:hover > :not(:hover){
+    opacity: 0.4;
+}
+
+/* *****************Contact Section***************** */
+.con_waves{
+    width: 100vw;
+}
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    color: black;
+    z-index: -1;
+}
+.Contact .contact_background{
+    width: 57%;
+    position: relative;
+    top: 00px;
+    bottom: 70px;
+}
+.Contact h2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+.Contact .lineThree .lineThird{
+    margin-top: 00px;
+    height: 2px;
+    width: 255px;
+    background-color: black;
+}
+.Contact .lineThree hr{
+    width: 60px;
+    height: 07px;
+    background-color: black;
+    position: relative;
+    bottom: 25.5px;
+}
+.Contact .info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.Contact .add_info ul{
+    display: flex;
+    flex-direction: column;
+}
+.Contact .add_info ul li{
+    list-style: none;
+    line-height: 2;
+}
+.Contact .con_share{
+    display: flex;
+    color: black;
+    z-index: 10;
+    margin-top: 24px;
+}
+.Contact .con_share h3{
+    font-size: 18px;
+}
+.Contact .con_share a{
+    display: inline;
+    color: #333333;
+    margin: 14px 13px;
+}
+.Contact form{
+    display: inline;
+    position: relative;
+    left: 70px;
+    width: 58%;
+}
+.Contact form .con_tr1{
+    display: flex;
+    flex-direction: row;
+}
+.Contact form .con_email{
+    padding-left: 25px;
+}
+.Contact input{
+    width: 290px;
+    padding-left: 05px;
+    padding-bottom: 06px;
+    border: none;
+    border-bottom: 2px solid #e9e2e2;
+}
+.Contact textarea{
+    display: block;
+    margin-top: 10px;
+    width: 610px;
+    padding-left: 05px;
+    border: none;
+    border-bottom: 2px solid #e9e2e2;
+}
+.Contact .con_send button{
+    display: inline-block;
+    position: relative;
+    left: 467px;
+    padding: 12px;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.Contact .con_send button span{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border: solid white;
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+    position: relative;
+    top: -1px;
+    left: 03px;
+}
+.Contact .con_send button:hover span{
+    position: relative;
+    left: 08px;
+}
+
+/* *****************Footer Section***************** */
+.footer{
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: 170px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+footer .bottonLogo{
+    display: inline-block;
+    position: relative;
+    left: 217px;
+    z-index: 2;
+}
+footer .bottonLogo img{
+    width: 70px;
+    margin: 02px;
+}
+footer .scroll-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .top{
+    display: inline-block;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 39px;
+    cursor: pointer;
+    box-shadow: 00px 05px 11px black;
+}
+footer .top span{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: solid black;
+    border-width: 2px 2px 0 0;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+footer .copyright{
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 24px;
+    right: 224px;
+}
+/* .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .bottonLogo{
+    display: block;
+    width: 100%;
+    float: left;
+    z-index: 2;
+}
+footer .bottonLogo img{
+    width: 140px;
+    border-radius: 170px;
+}
+footer .scroll-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .top{
+    display: inline-block;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 39px;
+    cursor: pointer;
+    box-shadow: 00px 05px 11px black;
+}
+footer .top span{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: solid black;
+    border-width: 2px 2px 0 0;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 30px;
+    left: 30px;
+} */
+
+/* *****************Media Section***************** */
+
+@media (max-width:1542px){
+    /* Portfolio Section */
+    .Portfolio .por_box{
+        display: grid;
+        grid-template-rows: repeat(2,300px);
+        grid-template-columns: repeat(2,433px);
+    }
+}
+
+@media (max-width:1247px) {
+    /* Home Section */
+    /* Home Section Logo */
+    .logo{
+        left: 76px;
+    }
+    /* Home Section - Navbar */
+    #Home nav #res_nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: fixed;
+        top: 80px;
+        width: 100%;
+        z-index: 20;
+        padding: 36px 0px;
+        background-color: black;
+        opacity: 0;
+        overflow: hidden;
+    }
+    #Home nav ul li{
+        padding: 20px 12px;
+    }
+    /* Home Section - Responsive Navbar */
+    #Home .responsive_nav{
+        display: inline;
+        cursor: pointer;
+        position: fixed;
+        right: 10px;
+        margin-top: 30px;
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        z-index: 25;
+        overflow: hidden;
+        background-color: transparent;
+    } 
+    #Home .responsive_nav .line_1{
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 08px 10px;
+        position: relative;
+        background-color: black;
+    }
+    #Home .responsive_nav .line_2{
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 08px 10px;
+        background-color: black;
+    }
+    #Home .responsive_nav .line_3{
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 08px 10px;
+        position: relative;
+        background-color: black;
+    }
+
+
+    /* Home Section - Myself */
+    .Myself{
+        font-size: 45px;
+        position: relative;
+        left: 110px;
+    }
+
+    /* About Section */
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* About Section - My Img */
+    .about .My_img img{
+        width: 640px;
+        height: 700px;
+    }
+    /* About Section - My Detial */
+    .about .detail{
+        padding-top: 45px;
+    }
+    /* About Side Symboll */
+    .aboutSideSym{
+        position: relative;
+        top: -212px;
+    }
+
+    /* Contact Section */
+    .Contact .info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .Contact .con_share{
+        margin: 05px;
+    }
+    .Contact form{
+        position: relative;
+        left: 00px;
+    }
+    .Contact .con_send button{
+        position: relative;
+        left: 00px;
+    }
+
+    /* Footer Section */
+    footer .scroll-top{
+        display: none;
+    }
+}
+
+@media (max-width:990px){
+    /* Home Section - Myself */
+    .Myself{
+        font-size: 45px;
+        position: relative;
+        left: 70px;
+    }
+    .Myself h2{
+        font-size: 2.5rem;
+    }
+
+    /* About Section */
+    .about .My_img img{
+        position: relative;
+        left: 10px;
+        width: 360px;
+        height: 477px;
+    }
+
+    /* Portfolio Section */
+    .Portfolio .por_box{
+        display: grid;
+        grid-template-columns: repeat(1,400px);
+    }
+    .Portfolio .por_box .box a img{
+        width: 400px;
+    }
+    .Portfolio .por_box #myntra_clone{
+        margin-top: 15px;
+    }
+    .Portfolio .por_box #dairy_clone{
+        margin-top: 30px;
+    }
+    .Portfolio .por_box a img{
+        width: 500px;
+        height: 310px;
+    }
+
+    /* Contact Section */
+    .Contact form .con_tr1{
+        display: flex;
+        flex-direction: column;
+    }
+    .Contact form .con_email{
+        padding-left: 00px;
+    }
+    .Contact form tr td{
+        margin-top: 15px;
+    }
+    .Contact input{
+        width: 336px;
+    }
+    .Contact textarea{
+        width: 336px;
+    }
+
+    /* Footer Section */
+    footer .bottonLogo{
+        left: 76px;
+    }
+    footer .copyright{
+        right: 64px;
+    }
+}
+
+@media (max-width:823px){
+    /* Home Section - Background Img */
+    .backg_img{
+        position: relative;
+        top: 3px;
+    }
+
+    /* Home Section - Myself */
+    .Myself{
+        font-size: 45px;
+        position: relative;
+        top: 232px;
+        left: 70px;
+    }
+    .Myself h2{
+        font-size: 1.5rem;
+    }
+    .Myself h4 span{
+        font-size: 1rem;
+    }
+
+    /* Home Section - About Side Symboll */
+    .aboutSideSym{
+        position: relative;
+        top: -100px;
+    }
+
+    /* Home Section - Waves Section */
+    .waves{
+        width: 100%;
+        position: relative;
+        top: -35px;
+    }
+
+    /* About Section - My_Detial */
+    .about .detail{
+        width: auto;
+        padding-left: 40px;
+    }
+    .about .detail p{
+        width: auto;
+        margin: 12px 00px;
+        font-size: 20px;
+    }
+
+    /* Contact Section */
+    .Contact input{
+        width: 275px;
+    }
+    .Contact textarea{
+        width: 275px;
+    }
+}
+
+@media (max-width:450px) {
+    /* Home Section Logo */
+    .logo{
+        left: 15px;
+    }
+    /* Home Section - Navbar */
+    #Home nav ul li{
+        padding: 05px 12px;
+    }
+
+    /* Home Section - Myself */
+    .Myself{
+        position: relative;
+        top: 153px;
+        left: 30px;
+    }
+    .Myself h2{
+        font-size: 1.5rem;
+    }
+    .Myself h4 span{
+        font-size: 1rem;
+    }
+
+    /* About Side Symboll */
+    .aboutSideSym{
+        display: none;
+    }
+
+    /* About Section - My Img */
+    .about .My_img::before{
+        content: none;
+    }
+
+    /* Portfolio Section */
+    .Portfolio .por_box{
+        display: grid;
+        grid-template-columns: repeat(1,340px);
+    }
+    .Portfolio .por_box .box a img{
+        width: 330px;
+        height: 260px;
+    }
+
+    /* Footer Section */
+    footer .bottonLogo{
+        left: 15px;
+    }
+    footer .copyright{
+        right: 20px;
+    }
+}
